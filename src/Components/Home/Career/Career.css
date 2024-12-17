@@ -1,0 +1,141 @@
+/* Careers Section */
+.careers-section {
+    background-image: url("./Careerbg.png");
+    min-height: 300px;
+    padding: 20px; /* Added equal padding on all sides */
+    box-sizing: border-box; /* Ensures padding is included in the section's dimensions */
+}
+
+/* Button Styles */
+.btn-danger {
+    background: #FF4500;
+    border-color: #ef4444;
+    align-items: center; /* Adjust alignment for consistency */
+    padding: 10px 20px; /* Added padding for a balanced button appearance */
+    box-sizing: border-box; /* Ensures padding is included in the button's dimensions */
+    border-radius: 18px; /* Optional: Add rounded corners for better aesthetics */
+    text-align: center; /* Ensures text is centered within the button */
+    display: inline-block; /* Ensures consistent button layout */
+    position: relative; 
+    width: Hug (180px)px;
+    height: Hug (52px)px;
+    /* margin-right: 760px; */
+
+}
+
+.btn-danger:hover {
+    background-color: #dc2626;
+    border-color: #dc2626;
+}
+
+/* Text Styles */
+.exptext {
+    font-family: Open Sans;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+}
+
+.exppara {
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width:90%;
+}
+
+/* Padding Class (seems like a placeholder) */
+.pad {
+    width: 967px;
+    height: 72px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+/* Responsive Layouts */
+
+/* Tablets and Medium Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .careers-section {
+        padding: 20px 15px; /* Reduced padding for medium screens */
+    }
+
+    .btn-danger {
+        padding: 8px 16px; /* Slightly reduced padding on medium screens */
+        font-size: 14px; /* Adjust button text size for better fit */
+    }
+
+    .exptext {
+        font-size: 30px; /* Smaller heading size */
+        line-height: 40px; /* Adjust line height */
+    }
+
+    .exppara {
+        font-size: 16px; /* Smaller paragraph size */
+    }
+
+    .pad {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Adjust height for better layout */
+    }
+}
+
+/* Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .careers-section {
+        padding: 15px 10px; /* Further reduced padding for smaller screens */
+    }
+
+    .btn-danger {
+        padding: 6px 12px; /* Reduced padding for very small screens */
+        font-size: 12px; /* Smaller button text for smaller screens */
+    }
+
+    .exptext {
+        font-size: 24px; /* Smaller heading size */
+        line-height: 32px; /* Adjust line height */
+    }
+
+    .exppara {
+        font-size: 14px; /* Smaller paragraph size */
+    }
+
+    .pad {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Adjust height for better fit */
+    }
+}
+
+/* Extra Small Screens (max-width: 300px) */
+@media (max-width: 300px) {
+    .careers-section {
+        padding: 10px 5px; /* Minimal padding for very small screens */
+    }
+
+    .btn-danger {
+        padding: 5px 10px; /* Further reduced button padding */
+        font-size: 10px; /* Smaller button text for tiny screens */
+        
+    }
+
+    .exptext {
+        font-size: 20px; /* Even smaller heading */
+        line-height: 28px; /* Adjust line height */
+    }
+
+    .exppara {
+        font-size: 12px; /* Further reduced paragraph size */
+    }
+
+    .pad {
+        width: 100%; /* Full width for very small screens */
+        height: auto; /* Adjust height */
+    }
+}

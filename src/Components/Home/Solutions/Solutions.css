@@ -1,0 +1,146 @@
+.strategy {
+  padding: 2rem; /* Equal padding on all sides */
+  background-color: #ffffff;
+}
+
+.strategy-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem; /* Increased gap for better spacing */ 
+}
+
+.colo {
+  background: #F5F7FA;
+  height: 460px;
+  padding: 1rem; /* Equal padding on all sides */
+  border-radius: 8px; /* Consistent border-radius for a polished look */
+}
+
+.strategy-image {
+  grid-column: 1 / 2;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  width: 625px;
+height: 420px;
+border-radius: 70px;
+gap: 0px;
+opacity: 0px;
+  padding: 1rem; /* Equal padding for consistency */
+}
+
+.strategy-image img {
+  width: 100%; /* Responsive adjustment for all screen sizes */
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(1.1) contrast(1.1);
+}
+
+.strategy-content {
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+  padding: 1rem; /* Equal padding on all sides for the content area */
+
+}
+
+.strategy-content h2 {
+  color: #333;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: Open Sans;
+font-size: 30px;
+font-weight: 600;
+line-height: 47.66px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+margin-bottom:0.1px;
+
+}
+
+.strategy-content p {
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.6;
+  text-align: left;
+  font-family: Open Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 25px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .strategy-container {
+      gap: 2rem;
+  }
+
+  .colo {
+      height: fit-content;
+      padding: 1.5rem; /* Equal padding for medium screens */
+  }
+
+  .strategy-content h2 {
+      font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .strategy {
+      padding: 3rem; /* Equal padding on all sides for smaller screens */
+  }
+
+  .strategy-container {
+      grid-template-columns: 1fr;
+      gap: 2rem; /* Increased gap for better spacing on smaller screens */
+  }
+
+  .strategy-image {
+      grid-column: 1 / -1;
+      aspect-ratio: 16/9;
+      width: 100%; /* Ensures the image fills the width of the container */
+      height: auto;
+      padding: 1rem; /* Equal padding for smaller screens */
+  }
+
+  .strategy-content {
+      grid-column: 1 / -1;
+      padding: 1.5rem; /* Equal padding for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .strategy {
+      padding: 2rem; /* Equal padding for very small screens */
+  }
+
+  .strategy-content h2 {
+      font-size: 1.5rem;
+  }
+
+  .strategy-content p {
+      font-size: 0.9rem;
+  }
+
+  .strategy-image {
+      width: 100%; /* Full width for mobile */
+      height: auto; /* Ensures the height adjusts to maintain aspect ratio */
+      object-fit: cover; /* Ensures the image covers the container without distorting */
+      padding: 1rem; /* Equal padding for very small screens */
+  }
+
+  .colo {
+      padding: 1rem; /* Equal padding inside the box for very small screens */
+  }
+}

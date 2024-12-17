@@ -1,0 +1,27 @@
+
+.container h1 {
+    font-size: 35px;
+    font-weight: 600;
+    /* color: #333; */
+    font-family: Open Sans;
+  }
+  
+  .lead {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #070707;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    font-family: Open Sans;
+  }
+  
+  @media (max-width: 768px) {
+    .container h1 {
+      font-size: 2rem;
+    }
+    
+    .lead {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  }

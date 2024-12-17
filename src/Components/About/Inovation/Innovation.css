@@ -1,0 +1,52 @@
+.xstream-frame {
+    background: #F5F7FA99;
+
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .xstream-title {
+    font-size: 1.8rem;
+    color: #ff4500;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .xstream-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .xstream-icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .xstream-icon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 150px;
+  }
+  
+  .xstream-icon-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .xstream-icon-card p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+  }
+  

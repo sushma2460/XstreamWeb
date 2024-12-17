@@ -1,0 +1,135 @@
+.strategy-list {
+  grid-column: 1 / -1;
+  margin-top: 0.5rem;
+  background: white;
+  padding: 2rem;
+  max-width: 85%;
+  margin-left: 3rem;
+  /* border: 2px solid red; */
+}
+.container-padding{
+  padding:20px;
+  
+}
+.strategy-list h3 {
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: left;
+  font-family: Open Sans;
+font-size: 35px;
+font-weight: 600;
+line-height: 47.66px;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.strategy-list ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.strategy-list li {
+    display: flex;
+    gap: 1rem;
+    /* font-size: 1rem; */
+    color: #666;
+    line-height: 1.5;
+      /*Ensures text is center-aligned */
+    /* max-width: 1000px; Restricts width to prevent text from spreading */
+    font-family: Open Sans;
+}
+  .strategyp{
+font-size: 18px;
+/* font-weight: 600; */
+color:black;
+line-height: 21.79px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+font-family: Open Sans;
+
+}
+.iconic{
+  width: 24px;
+height: 24px;
+top: 70px;
+left: 154px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+.checkmark {
+  color: #ff4d00;
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .strategy-container {
+    gap: 2rem;
+  }
+  .colo{
+    height: fit-content;
+  }
+
+  .strategy-content h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .strategy {
+    padding: 3rem 1.5rem;
+  }
+
+  .strategy-container {
+    grid-template-columns: 1fr;
+  }
+
+  .strategy-image {
+    grid-column: 1 / -1;
+    aspect-ratio: 16/9;
+    width: 100%;  /* Ensures the image fills the width of the container */
+  height: auto;
+  }
+
+  .strategy-content {
+    grid-column: 1 / -1;
+  }
+
+  .strategy-list h3 {
+    font-size: 1.25rem;
+  }
+
+  .strategy-list li {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .strategy-list h3 {
+    font-size: 1.2rem;
+    margin-left: -60px;
+  }
+
+  .strategy-list li {
+    font-size: 0.9rem;
+    text-align: left;
+    padding: auto;
+    margin-left: -60px;
+  }
+  .strategy-image {
+    width: 100%;  /* Full width for mobile */
+    height: auto;  /* Ensures the height adjusts to maintain aspect ratio */
+    object-fit: cover;  /* Ensures the image covers the container without distorting */
+  }
+}

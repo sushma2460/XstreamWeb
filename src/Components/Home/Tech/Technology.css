@@ -1,0 +1,196 @@
+/* General container styling */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .partner-container {
+    background-image: url("./back2.png");
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;/* 676 for full image*/
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .confluent-logo {
+    width: 60%;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .xstream-logo {
+    width: 30%;
+    margin-top: 15px;
+    text-align: left;
+  }
+  
+  .award-year {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .award-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: white;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  .divider {
+    border: 0;
+    border-top: 2px solid rgb(250, 249, 249);
+    width: 50%;
+    align-items: left;
+    color: rgb(233, 17, 17);
+  }
+  
+  /* Title styling */
+  .partner-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #120A81;
+    font-family: Open Sans;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  /* Description styling */
+  .partner-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    color: #ffffff  ;
+  }
+  
+  /* Content wrapper */
+  .partner-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    width: 100%; /* Ensure it doesn't exceed the viewport width */
+    margin: 0 auto; /* Center the content */
+    box-sizing: border-box; /* Include padding/border in total width */
+  }
+  
+  /* Award Card Styling */
+  .award-card {
+    background-color: #314CFF;
+    color: #fff;
+    max-width: 250px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 282px;
+    height: 305px;
+  }
+  
+  .award-content h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #fcfcfd;
+    text-align: left;
+  }
+  
+  .bod {
+    border: 2px solid rgb(246, 246, 246);
+    padding: 10px;
+  }
+  
+  .logo {
+    text-align: center;
+    color: #ff7043;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  /* Placeholder Card Styling */
+  .placeholder-card {
+    background: #fff;
+    width: 100%;
+    max-width: 300px;
+    min-height: 350px;
+    border-radius: 10px;
+    border: 2px dashed #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .partner-title {
+      font-size: 1rem;
+    }
+  
+    .partner-description {
+      font-size: 1rem;
+    }
+  
+    .partner-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .award-card,
+    .placeholder-card {
+      min-height: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .partner-container {
+      padding: 20px;
+      height: auto; /* Adjust height to fit content */
+    }
+  
+    .partner-title {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    .hign
+  
+    .partner-description {
+      font-size: 0.9rem;
+    }
+  
+    .award-card,
+    .placeholder-card {
+      padding: 15px;
+      min-height: 250px;
+    }
+  
+    .award-content h2 {
+      font-size: 1.2rem;
+    }
+  
+    .award-content p {
+      font-size: 0.9rem;
+    }
+  
+    .logo {
+      font-size: 1rem;
+    }
+  }
+  

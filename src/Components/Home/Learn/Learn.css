@@ -1,0 +1,82 @@
+.learn-experts {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #f8f9fa, #ffffff);
+    overflow: hidden;
+  }
+  
+  .learn-experts-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .learn-experts-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .learn-experts-content h2 {
+    font-family: Open Sans;
+font-size: 35px;
+font-weight: 600;
+line-height: 24px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+    
+  }
+  
+  .learn-experts-content p {
+    font-family: Open Sans;
+    color:black;
+font-size: 18px;
+font-weight: 400;
+line-height: 25px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 1024px) {
+    .learn-experts {
+      padding: 4rem 2rem;
+    }
+  
+    .learn-experts-content h2 {
+      font-size: 2rem;
+      line-height: normal;
+    }
+  
+    .learn-experts-content p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .learn-experts {
+      padding: 3rem 1.5rem;
+    }
+  
+    .learn-experts-content h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .learn-experts {
+      padding: 2rem 1rem;
+    }
+  
+    .learn-experts-content h2 {
+      font-size: 1.8rem;
+      
+    }
+  
+    .learn-experts-content p {
+      font-size: 0.95rem;
+    }
+  }

@@ -1,0 +1,100 @@
+.stat-card {
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 280px;
+    position: absolute;
+    transition: transform 0.3s ease;  
+  }
+  
+  
+  /* Position each card */
+  .stat-card:nth-child(1) {
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+  
+  .stat-card:nth-child(2) {
+    top: -80px;
+    left: 160px;
+    z-index: 3;
+  }
+  
+  .stat-card:nth-child(3) {
+    top: 80px;
+    left: 190px;
+    z-index: 3;
+  }
+  
+  .stat-card:hover {
+    transform: translateX(-10px);
+    z-index: 4; /* Bring to front on hover */
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+  }
+  
+  .stat-label {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.5rem 0 0 0;
+    position: relative;
+    padding-left: 1rem;
+    text-align: left;
+  }
+  
+  .stat-label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 16px;
+    background-color: #ff4500;
+    border-radius: 2px;
+  }
+  
+  @media (max-width: 768px) {
+    .stat-card {
+      width: 180px;
+    }
+    
+    .stat-card:nth-child(2) {
+      left: 30px;
+    }
+    
+    .stat-card:nth-child(3) {
+      left: 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .stat-card {
+      width: 160px;
+      padding: 1.25rem 1.5rem;
+    }
+  
+    .stat-number {
+      font-size: 2rem;
+    }
+  
+    .stat-label {
+      font-size: 0.9rem;
+    }
+    
+    .stat-card:nth-child(2) {
+      left: 20px;
+    }
+    
+    .stat-card:nth-child(3) {
+      left: 40px;
+    }
+  }

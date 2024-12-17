@@ -1,0 +1,139 @@
+/* General Container Styles */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Card Styles */
+  .card {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    perspective: 1000px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Card Front Styles */
+  .card-front {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #F5F7FA;
+    color: #000;
+    font-weight: bold;
+    backface-visibility: hidden;
+    transition: opacity 0.3s ease;
+    box-shadow: 0px 3px 1px 0px #0000000A;
+    box-shadow: 0px 3px 8px 0px #0000001F;
+    font-family: Open Sans;
+  }
+  
+  .card-front .logo {
+    width: 50px;
+    height: 50px;
+    top: 116px;
+    left: 270px;
+    gap: 0px;
+    border-radius: 10px 1px 10px 1px;
+    opacity: 0px;
+
+  }
+  
+  .card-front .title {
+    font-size: 1.2rem;
+    font-family: Open Sans;
+font-size: 18px;
+font-weight: 600;
+line-height: 24.51px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+max-width:300px;
+  }
+  
+  /* Card Back Styles */
+  .card-back {
+    font-family: Open Sans;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 10px;
+    opacity: 0;
+    backface-visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  .card-back .content{
+    font-family: Open Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 25px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color:black;
+
+  }
+
+  
+  /* Hover State */
+  .card:hover .card-front {
+    opacity: 0;
+  }
+  
+  .card:hover .card-back {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .cards-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .card {
+      width: 100%;
+      height: 150px;
+    }
+  
+    .card-front .logo {
+      font-size: 1.5rem;
+    }
+  
+    .card-front .title {
+      font-size: 1rem;
+    }
+  
+    .card-back {
+      font-size: 0.9rem;
+    }
+    .card-back .content{
+      font-size:10px;
+    }
+  }
+  
